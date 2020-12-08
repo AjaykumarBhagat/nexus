@@ -53,6 +53,10 @@ objects:
       spec:
         containers:
         - env:
+          - name: "HTTPS_PROXY"
+            value: "http://10.205.30.35:8080"
+          - name: "NO_PROXY"
+            value: ".apps.indhyosftclup01.infosys-platforms.com,.cluster.local,.infosys-platforms.com,.svc,10.0.0.0/16,10.128.0.0/14,10.205.11.22,10.205.11.30,10.205.11.31,10.205.17.4,10.205.17.5,10.205.17.6,10.205.20.18,10.205.20.19,10.205.20.20,10.205.62.11,10.205.62.12,10.205.62.13,10.205.62.14,10.205.62.15,10.205.62.16,10.205.62.17,10.205.62.9,127.0.0.1,172.30.0.0/16,api-int.indhyosftclup01.infosys-platforms.com,api.indhyosftclup01.infosys-platforms.com,etcd-0.indhyosftclup01.infosys-platforms.com,etcd-1.indhyosftclup01.infosys-platforms.com,etcd-2.indhyosftclup01.infosys-platforms.com,infosys-platforms.com,localhost,openshift.default.svc.cluster.local"
           - name: CONTEXT_PATH
             value: /
           image: ' '
